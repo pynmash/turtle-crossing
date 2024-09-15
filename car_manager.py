@@ -23,6 +23,9 @@ class CarManager:
             new_car.goto(x=randrange(-300, 300, 20), y=randrange(-240, 260, 20))
             self.cars.append(new_car)
 
+    def list(self):
+        return self.cars
+
     def move(self):
         for car in self.cars:
             car.goto(car.xcor() - self.move_distance, car.ycor())

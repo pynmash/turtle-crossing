@@ -20,7 +20,7 @@ while game_is_on:
     time.sleep(0.1)
     cars.move()
     player.check_if_finished()
-    for car in cars.cars_list():
+    for car in cars.list():
         if car.distance(player) < 20:
             game_is_on = False
     screen.update()
