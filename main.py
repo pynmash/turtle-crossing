@@ -19,6 +19,7 @@ game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     cars.move()
+    player.check_if_finished()
     screen.update()
 
 

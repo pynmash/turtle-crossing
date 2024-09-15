@@ -19,3 +19,6 @@ class Player(Turtle):
 
     def move(self):
         self.forward(MOVE_DISTANCE)
+    def check_if_finished(self):
+        if self.ycor() > 280:
+            self.set_start()
